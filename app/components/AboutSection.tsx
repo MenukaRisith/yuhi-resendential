@@ -2,10 +2,9 @@ const AboutSection = () => {
     return (
       <section className="relative w-full h-auto bg-white py-12 sm:py-16 flex flex-col items-center">
         {/* Section Title */}
-        <div className="w-full max-w-4xl text-center mb-12 sm:mb-16 px-4 sm:px-8">
+        <div className="w-full max-w-5xl text-center mb-12 sm:mb-16 px-4 sm:px-8">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-['Inter'] leading-tight text-gray-900">
-            We are a luxury renovation
-            <br /> service provider in Dubai, UAE
+            We are a luxury renovation service provider in Dubai, UAE
           </h2>
           <p className="mt-4 sm:mt-6 text-lg sm:text-2xl font-normal font-['Poppins'] text-zinc-600 leading-normal">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Aaugue tincidunt libero cras primis sodales nisl.
@@ -21,7 +20,7 @@ const AboutSection = () => {
             href="https://wa.me/971565715159"
             target="_blank"
             rel="noopener noreferrer"
-            className="h-12 sm:h-14 pl-4 sm:pl-5 pr-6 sm:pr-7 py-2 sm:py-3.5 bg-gray-900 rounded-3xl flex justify-center items-center gap-2 transition-all duration-200 hover:bg-gray-700"
+            className="h-12 sm:h-14 pl-4 sm:pl-5 pr-6 sm:pr-7 py-2 sm:py-3.5 bg-[#0D2220] rounded-3xl flex justify-center items-center gap-2 transition-all duration-200 hover:bg-gray-700"
           >
             <div className="w-6 sm:w-7 h-6 sm:h-7 flex justify-center items-center">
               <img src="/icons/whatsapp.png" alt="WhatsApp Icon" className="w-full h-full object-contain" />

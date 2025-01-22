@@ -25,9 +25,9 @@ const HomePage = () => {
         <HeroSection />
         {/* Animated Image */}
         <motion.div
-          initial="hidden"
+          initial="visible"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={sectionVariants}
           className="w-full flex justify-center mb-12 px-4"
         >

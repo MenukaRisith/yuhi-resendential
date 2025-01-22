@@ -50,7 +50,7 @@ const ContactSection = () => {
                   className="w-full lg:w-[380px] h-48 bg-white rounded-2xl p-6 flex flex-col justify-between"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-gray-900 rounded-2xl flex justify-center items-center">
+                    <div className="w-12 h-12 bg-[#0D2220] rounded-2xl flex justify-center items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"

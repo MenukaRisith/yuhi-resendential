@@ -39,7 +39,7 @@ const ServicesSection = () => {
                 {service.description}
               </p>
               <button
-                className="w-32 sm:w-36 h-10 pl-3 pr-5 py-2.5 bg-gray-900 rounded-md flex justify-center items-center gap-1.5 transition-all duration-200 hover:bg-gray-700"
+                className="w-full sm:w-36 h-10 pl-3 pr-5 py-2.5 bg-[#0D2220] rounded-md flex justify-center items-center gap-1.5 transition-all duration-200 hover:bg-gray-700"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

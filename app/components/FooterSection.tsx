@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-      <footer className="bg-gray-900 text-white py-0 pt-8">
+      <footer className="bg-[#0D2220] text-white py-0 pt-8">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col gap-12">
           {/* Top Section */}
           <div className="flex flex-col lg:flex-row justify-between items-start gap-12">

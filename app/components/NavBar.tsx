@@ -53,15 +53,15 @@ const Navbar = () => {
           href="https://wa.me/971565715159"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden lg:flex h-12 pl-4 pr-6 py-2.5 bg-gray-900 rounded-3xl justify-center items-center gap-2.5 transition-all duration-200 hover:bg-gray-700"
+          className="hidden lg:flex h-14 pl-5 pr-7 py-3 bg-[#0D2220] rounded-3xl justify-center items-center gap-3 transition-all duration-200 hover:bg-gray-700"
         >
-          <div className="w-6 h-6 px-0.5 py-0.5 flex justify-center items-center">
+          <div className="w-7 h-7 px-0.5 py-0.5 flex justify-center items-center">
             <img src="/icons/whatsapp.png" alt="WhatsApp Icon" className="w-full h-full object-contain" />
           </div>
-          <span className="text-white text-base font-medium font-['Poppins']">+971 56 571 5159</span>
-          <div className="px-2.5 py-0.5 bg-white rounded-2xl flex justify-center items-center gap-1">
-            <div className="w-1 h-1 bg-green-600 rounded-full"></div>
-            <span className="text-stone-950 text-xs font-medium font-['Poppins']">Online</span>
+          <span className="text-white text-lg font-medium font-['Poppins']">+971 56 571 5159</span>
+          <div className="px-3 py-1 bg-white rounded-2xl flex justify-center items-center gap-1.5">
+            <div className="w-1.5 h-1.5 bg-green-600 rounded-full"></div>
+            <span className="text-stone-950 text-sm font-medium font-['Poppins']">Online</span>
           </div>
         </a>
       </nav>
