@@ -23,7 +23,7 @@ const ServicesSection = () => {
           ].map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl overflow-hidden flex flex-col items-start p-6 sm:p-8"
+              className="bg-white rounded-2xl overflow-hidden flex flex-col items-start p-6 sm:p-8 hover:shadow-md"
             >
               <div className="w-full h-48 sm:h-56 overflow-hidden rounded-lg mb-4">
                 <img
