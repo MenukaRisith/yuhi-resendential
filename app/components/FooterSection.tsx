@@ -97,14 +97,17 @@ const Footer = () => {
 
           {/* Map and Address Section */}
           <div className="flex flex-col gap-4 items-end w-full lg:w-[300px]">
-            <div className="w-full h-[200px] rounded-lg overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="/map.png"
-                alt="Map"
-              />
-            </div>
-            <p className="text-right text-sm lg:text-base">
+          <div className="w-full h-[200px] rounded-lg overflow-hidden">
+            <iframe
+              title="Dubai Location Map"
+              className="w-full h-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.357432679069!2d55.270782115318285!3d25.204849683877527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4322679d7f89%3A0x79c5e41e5ad418a1!2sDubai!5e0!3m2!1sen!2s!4v1618375506359!5m2!1sen!2s"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+            ></iframe>
+          </div>
+            <p className="text-left text-sm lg:text-base">
               Yuhi Property Service, Project Office 02, 14th Floor, Jumeira Third, UAE
             </p>
           </div>

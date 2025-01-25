@@ -34,7 +34,7 @@ AnimatedNumber.propTypes = {
 // HeroSection Component
 const HeroSection = () => {
   return (
-    <section className="w-full bg-white flex flex-col items-center pt-20 pb-16 sm:pt-24 sm:pb-30 lg:pt-36 lg:pb-36">
+    <section className="w-full bg-white flex flex-col items-center pt-32 pb-16 sm:pt-24 sm:pb-30 lg:pt-52 lg:pb-36">
       {/* Heading Section */}
       <div className="text-center mb-8 px-4 sm:px-8">
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold font-['Inter'] leading-tight text-gray-900">
@@ -82,7 +82,7 @@ const HeroSection = () => {
       {/* Call-to-Action Button */}
       <a
         href="#proposal"
-        className="h-12 sm:h-14 lg:h-16 pl-4 sm:pl-5 pr-6 sm:pr-7 py-2 sm:py-3.5 bg-[#0D2220] text-white text-lg sm:text-xl font-medium font-['Poppins'] rounded-lg flex justify-center items-center gap-2 transition-all duration-200 hover:bg-gray-700"
+        className="h-12 sm:h-14 lg:h-16 pl-4 sm:pl-5 pr-6 sm:pr-7 py-2 sm:py-3.5 bg-[#0D2220] text-white text-lg sm:text-xl font-medium font-['Poppins'] rounded-lg flex justify-center items-center gap-2 transition-all duration-200 hover:bg-[#00c851]"
       >
         <div className="w-6 sm:w-7 lg:w-8 h-6 sm:h-7 lg:h-8 px-1 flex justify-center items-center">
           <img src="/icons/book.svg" alt="Book Icon" className="w-full h-full object-contain" />
