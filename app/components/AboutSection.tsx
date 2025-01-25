@@ -23,7 +23,7 @@ const AboutSection = () => {
             className="h-12 sm:h-14 pl-4 sm:pl-5 pr-6 sm:pr-7 py-2 sm:py-3.5 bg-[#0D2220] rounded-3xl flex justify-center items-center gap-2 transition-all duration-200 hover:bg-[#00c851]"
           >
             <div className="w-6 sm:w-7 h-6 sm:h-7 flex justify-center items-center">
-              <img src="/icons/whatsapp.png" alt="WhatsApp Icon" className="w-full h-full object-contain" />
+              <img src="/icons/ic_round-whatsapp.svg" alt="WhatsApp Icon" className="w-full h-full object-contain filter-white" />
             </div>
             <span className="text-white text-base sm:text-lg font-medium font-['Poppins']">+971 56 571 5159</span>
             <div className="px-2 py-0.5 bg-white rounded-2xl flex justify-center items-center gap-1">

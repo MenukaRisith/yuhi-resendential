@@ -85,7 +85,7 @@ const HeroSection = () => {
         className="h-12 sm:h-14 lg:h-16 pl-4 sm:pl-5 pr-6 sm:pr-7 py-2 sm:py-3.5 bg-[#0D2220] text-white text-lg sm:text-xl font-medium font-['Poppins'] rounded-lg flex justify-center items-center gap-2 transition-all duration-200 hover:bg-[#00c851]"
       >
         <div className="w-6 sm:w-7 lg:w-8 h-6 sm:h-7 lg:h-8 px-1 flex justify-center items-center">
-          <img src="/icons/book.svg" alt="Book Icon" className="w-full h-full object-contain" />
+          <img src="/icons/material-symbols_collections-bookmark-outline.svg" alt="Book Icon" className="w-full h-full object-contain filter-white" />
         </div>
         Request a Proposal
       </a>

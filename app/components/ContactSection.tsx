@@ -23,25 +23,25 @@ const ContactSection = () => {
                 title: "Call",
                 detail: "+971 56 184 2080",
                 button: "Call now",
-                icon: "/icons/call.png",
+                icon: "/icons/material-symbols_phone-in-talk-outline-rounded.svg",
               },
               {
                 title: "Message",
                 detail: "+971 56 184 2080",
                 button: "Message now",
-                icon: "/icons/msg.png",
+                icon: "/icons/material-symbols_perm-phone-msg-outline-rounded.svg",
               },
               {
                 title: "Mail",
                 detail: "yuhisweetfamily@gmail.com",
                 button: "Email now",
-                icon: "/icons/email.png",
+                icon: "/icons/material-symbols_mark-email-unread-outline.svg",
               },
               {
                 title: "Whatsapp",
                 detail: "+971 56 184 2080",
                 button: "Call/Message now",
-                icon: "/icons/whatsapp-1.png",
+                icon: "/icons/ic_round-whatsapp.svg",
               },
             ].map((item, index) => (
               <div
@@ -53,7 +53,7 @@ const ContactSection = () => {
                     <img
                       src={item.icon}
                       alt={`${item.title} Icon`}
-                      className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
+                      className="w-6 h-6 sm:w-8 sm:h-8 object-contain filter-greenish"
                     />
                   </div>
                   <div>

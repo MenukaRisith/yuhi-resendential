@@ -5,7 +5,8 @@ const Navbar = () => {
     const section = document.getElementById(id);
     if (section) {
       const yOffset = -100; // Adjust this value to fine-tune the offset
-      const yPosition = section.getBoundingClientRect().top + window.scrollY + yOffset;
+      const yPosition =
+        section.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: yPosition, behavior: "smooth" });
     }
   };
@@ -61,23 +62,31 @@ const Navbar = () => {
 
       {/* WhatsApp Contact Button */}
       <motion.a
-        whileHover={{ backgroundColor: "#00c851" }}
+        whileHover={{
+          backgroundColor: "#00c851",
+          transition: { duration: 0.2 },
+        }}
         href="https://wa.me/971565715159"
         target="_blank"
         rel="noopener noreferrer"
         className="hidden lg:flex h-14 pl-5 pr-7 py-3 bg-[#0D2220] rounded-full justify-center items-center gap-3 transition-all duration-200"
       >
-        <div className="w-7 h-7 px-0.5 py-0.5 flex justify-center items-center">
+        <motion.div
+          whileHover={{
+            transition: { duration: 0.3, ease: "easeInOut" },
+          }}
+          className="w-8 h-8 flex justify-center items-center"
+        >
           <img
-            src="/icons/whatsapp.png"
+            src="/icons/ic_round-whatsapp.svg"
             alt="WhatsApp Icon"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain filter-white"
           />
-        </div>
-        <span className="text-white text-lg font-medium font-['Poppins']">
+        </motion.div>
+        <span className="text-white text-lg font-medium font-['Poppins'] transition-all duration-200">
           +971 56 571 5159
         </span>
-        <div className="px-3 py-1 bg-white rounded-full flex justify-center items-center gap-1.5">
+        <div className="px-3 py-1 bg-white rounded-full flex justify-center items-center gap-1.5 transition-all duration-300">
           <div className="w-1.5 h-1.5 bg-green-600 rounded-full"></div>
           <span className="text-stone-950 text-sm font-medium font-['Poppins']">
             Online

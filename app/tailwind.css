@@ -10,3 +10,11 @@ body {
     color-scheme: dark;
   }
 }
+
+.filter-white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(100%);
+}
+
+.filter-greenish {
+  filter: invert(48%) sepia(84%) saturate(639%) hue-rotate(80deg) brightness(95%) contrast(95%);
+}
