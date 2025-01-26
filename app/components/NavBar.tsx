@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full px-6 py-4 bg-white flex justify-between items-center z-50 lg:px-24 lg:py-7">
+    <nav className="fixed top-0 left-0 w-full px-6 py-4 bg-[#F2F5F3] flex justify-between items-center z-50 lg:px-24 lg:py-7">
       {/* Logo Section */}
       <motion.div className="w-48 h-12 flex justify-center items-center overflow-hidden lg:w-72 lg:h-16">
         <div className="relative w-48 h-12 lg:w-72 lg:h-16">
@@ -40,7 +40,7 @@ const Navbar = () => {
       {/* Navigation Links */}
       <div
         id="mobile-menu"
-        className="hidden absolute top-20 left-0 w-full bg-white lg:static lg:flex lg:items-center lg:gap-10 lg:w-auto"
+        className="hidden absolute top-20 left-0 w-full bg-[#F2F5F3] lg:static lg:flex lg:items-center lg:gap-10 lg:w-auto"
       >
         <div className="flex flex-col gap-6 py-6 px-8 lg:flex-row lg:p-0 lg:gap-10">
           {[
@@ -52,7 +52,7 @@ const Navbar = () => {
             <motion.a
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className="cursor-pointer text-stone-950 text-lg font-semibold capitalize leading-7 font-['Inter'] transition-all duration-200 hover:text-green-600 lg:text-2xl"
+              className="cursor-pointer text-stone-950 text-lg font-semibold capitalize leading-7 transition-all duration-200 hover:text-[#00c851] lg:text-2xl"
             >
               {link.label}
             </motion.a>

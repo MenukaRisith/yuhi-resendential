@@ -18,24 +18,26 @@ const HomePage = () => {
     },
   };
 
+  const heroVariants = {
+    hidden: { opacity: 0, scale: 0.95 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 1, ease: 'easeOut' },
+    },
+  };
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#F2F5F3] font-[poppins]">
       <Navbar />
       <main>
-        <HeroSection />
-        {/* Animated Image */}
+        {/* Animated Hero Section */}
         <motion.div
-          initial="visible"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={sectionVariants}
-          className="w-full flex justify-center mb-12 px-4"
+          initial="hidden"
+          animate="visible"
+          variants={heroVariants}
         >
-          <img
-            className="w-full max-w-6xl h-auto object-cover rounded-xl sm:rounded-2xl lg:rounded-3xl"
-            src="/images/bg-1.png"
-            alt="Design Concept of the Most Outstanding Mansion in Dubai"
-          />
+          <HeroSection />
         </motion.div>
 
         {/* Animated Sections */}

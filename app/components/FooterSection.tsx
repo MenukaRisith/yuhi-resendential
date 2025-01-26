@@ -22,7 +22,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 bg-green-600/10 rounded-xl"
               >
-                <i className="fab fa-facebook-f text-green-600 text-xl"></i>
+                <i className="fab fa-facebook-f text-[#00c851] text-xl"></i>
               </a>
               <a
                 href="https://www.instagram.com/"
@@ -30,7 +30,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 bg-green-600/10 rounded-xl"
               >
-                <i className="fab fa-instagram text-green-600 text-xl"></i>
+                <i className="fab fa-instagram text-[#00c851] text-xl"></i>
               </a>
               <a
                 href="https://www.twitter.com/"
@@ -38,7 +38,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 bg-green-600/10 rounded-xl"
               >
-                <i className="fab fa-twitter text-green-600 text-xl"></i>
+                <i className="fab fa-twitter text-[#00c851] text-xl"></i>
               </a>
               <a
                 href="https://www.youtube.com/"
@@ -46,7 +46,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 bg-green-600/10 rounded-xl"
               >
-                <i className="fab fa-youtube text-green-600 text-xl"></i>
+                <i className="fab fa-youtube text-[#00c851] text-xl"></i>
               </a>
             </div>
           </div>
@@ -57,22 +57,22 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a href="#about" className="flex items-center gap-2 text-white hover:underline">
-                  <span className="text-green-600">&gt;</span> About Us
+                  <span className="text-[#00c851]">&gt;</span> About Us
                 </a>
               </li>
               <li>
                 <a href="#services" className="flex items-center gap-2 text-white hover:underline">
-                  <span className="text-green-600">&gt;</span> Services
+                  <span className="text-[#00c851]">&gt;</span> Services
                 </a>
               </li>
               <li>
                 <a href="#projects" className="flex items-center gap-2 text-white hover:underline">
-                  <span className="text-green-600">&gt;</span> Projects
+                  <span className="text-[#00c851]">&gt;</span> Projects
                 </a>
               </li>
               <li>
                 <a href="#contact" className="flex items-center gap-2 text-white hover:underline">
-                  <span className="text-green-600">&gt;</span> Contact
+                  <span className="text-[#00c851]">&gt;</span> Contact
                 </a>
               </li>
             </ul>
@@ -84,12 +84,12 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a href="/privacy-policy" className="flex items-center gap-2 text-white hover:underline">
-                  <span className="text-green-600">&gt;</span> Privacy Policy
+                  <span className="text-[#00c851]">&gt;</span> Privacy Policy
                 </a>
               </li>
               <li>
                 <a href="/terms-and-conditions" className="flex items-center gap-2 text-white hover:underline">
-                  <span className="text-green-600">&gt;</span> Terms & Conditions
+                  <span className="text-[#00c851]">&gt;</span> Terms & Conditions
                 </a>
               </li>
             </ul>

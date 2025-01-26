@@ -1,9 +1,9 @@
 const AboutSection = () => {
     return (
-      <section className="relative w-full h-auto bg-white py-12 sm:py-16 flex flex-col items-center" id="about">
+      <section className="relative w-full h-auto py-12 sm:py-16 flex flex-col items-center" id="about">
         {/* Section Title */}
         <div className="w-full max-w-5xl text-center mb-12 sm:mb-16 px-4 sm:px-8">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-['Inter'] leading-tight text-gray-900">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">
             We are a luxury renovation service provider in Dubai, UAE
           </h2>
           <p className="mt-4 sm:mt-6 text-lg sm:text-2xl font-normal font-['Poppins'] text-zinc-600 leading-normal">
@@ -13,8 +13,8 @@ const AboutSection = () => {
   
         {/* Contact Section */}
         <div className="w-full max-w-4xl bg-stone-50 rounded-3xl border py-4 sm:py-5 px-6 sm:px-12 flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-0">
-          <div className="text-center sm:text-left text-2xl sm:text-3xl font-bold font-['Inter'] text-gray-900">
-            Contacting us just got <span className="text-green-600">easier!</span>
+          <div className="text-center sm:text-left text-2xl sm:text-3xl font-bold text-gray-900">
+            Contacting us just got <span className="text-[#00c851]">easier!</span>
           </div>
           <a
             href="https://wa.me/971565715159"

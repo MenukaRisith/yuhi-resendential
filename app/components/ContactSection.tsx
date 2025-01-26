@@ -1,13 +1,13 @@
 const ContactSection = () => {
   return (
-    <section className="w-full bg-white py-16 flex justify-center items-center" id="contact">
+    <section className="w-full py-16 flex justify-center items-center" id="contact">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-12 max-w-7xl w-full px-8">
         {/* Left Side: Text and Contact Cards */}
         <div className="flex flex-col items-start w-full lg:w-[55%]">
           {/* Section Title */}
           <div className="mb-12 w-full max-w-3xl text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold font-['Inter'] leading-tight text-gray-900">
-              It’s easier than ever <span className="whitespace-nowrap">to <span className="text-green-600">contact us</span></span>
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight text-gray-900">
+              It’s easier than ever <span className="whitespace-nowrap">to <span className="text-[#00c851]">contact us</span></span>
             </h2>
             <p className="mt-4 text-base sm:text-lg lg:text-xl font-normal font-['Poppins'] text-zinc-600 leading-normal">
               Lorem ipsum odor amet, consectetuer adipiscing elit.
@@ -33,7 +33,7 @@ const ContactSection = () => {
               },
               {
                 title: "Mail",
-                detail: "yuhisweetfamily@gmail.com",
+                detail: "yuhi******@gmail.com",
                 button: "Email now",
                 icon: "/icons/material-symbols_mark-email-unread-outline.svg",
               },
@@ -46,7 +46,7 @@ const ContactSection = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="w-full lg:w-[380px] h-48 bg-white rounded-2xl p-6 flex flex-col justify-between transition-shadow duration-300 delay-200 hover:shadow-md"
+                className="w-full lg:w-[380px] mr-8 h-48 bg-white rounded-2xl p-6 flex flex-col justify-between transition-shadow duration-300 delay-200 hover:shadow-md"
               >
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-[#0D2220] rounded-2xl flex justify-center items-center">
@@ -57,7 +57,7 @@ const ContactSection = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-medium font-['Inter'] text-stone-950 leading-normal">
+                    <h3 className="text-xl sm:text-2xl font-medium text-stone-950 leading-normal">
                       {item.title}
                     </h3>
                     <p className="text-base sm:text-lg font-medium font-['Poppins'] text-zinc-600">
@@ -77,7 +77,7 @@ const ContactSection = () => {
         <div className="w-full lg:w-[393px] h-[500px] lg:h-[700px] rounded-3xl overflow-hidden mt-8 lg:mt-0">
           <img
             className="w-full h-full object-cover"
-            src="/images/bg-1.png"
+            src="/images/luxury-house-in-dubai-image.webp"
             alt="Design Concept of the Most Outstanding Mansion in Dubai"
           />
         </div>

@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
 // AnimatedNumber Component
 const AnimatedNumber = ({ value, startValue }: { value: number; startValue: number }) => {
   const [displayValue, setDisplayValue] = useState(startValue);
 
   useEffect(() => {
-    const duration = 5000; // Animation duration in ms
+    const duration = 500; // Animation duration in ms
     const increment = (value - startValue) / (duration / 16);
 
     let currentValue = startValue;
@@ -31,64 +31,75 @@ AnimatedNumber.propTypes = {
   startValue: PropTypes.number.isRequired,
 };
 
+// StatsSection Component
+const StatsSection = () => {
+  const statsData = [
+    { label: "Renovations", value: 200, startValue: 100, suffix: "+" },
+    { label: "Satisfaction", value: 100, startValue: 50, suffix: "%" },
+    { label: "Projects", value: 120, startValue: 60, suffix: "+" },
+    { label: "Specialists", value: 85, startValue: 40, suffix: "+" },
+  ];
+
+  return (
+    <div className="relative mt-16 sm:-mt-16 bg-white text-gray-900 rounded-3xl border border-stone-300 py-6 px-6 sm:px-12 lg:px-14 grid grid-cols-2 sm:flex sm:flex-wrap justify-center items-center gap-8 sm:gap-14 w-11/12 sm:w-3/4 lg:w-1/2 mx-auto">
+      {statsData.map((stat, index) => (
+        <div
+          key={index}
+          className="flex flex-col items-center text-center"
+        >
+          <div className="text-4xl sm:text-5xl lg:text-6xl font-bold">
+            <span>
+              <AnimatedNumber value={stat.value} startValue={stat.startValue} />
+            </span>
+            <span className="text-[#00c851]">{stat.suffix}</span>
+          </div>
+          <span className="text-sm sm:text-base font-medium text-zinc-600 font-['Poppins']">
+            {stat.label}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 // HeroSection Component
 const HeroSection = () => {
   return (
-    <section className="w-full bg-white flex flex-col items-center pt-32 pb-16 sm:pt-24 sm:pb-30 lg:pt-52 lg:pb-36">
-      {/* Heading Section */}
-      <div className="text-center mb-8 px-4 sm:px-8">
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold font-['Inter'] leading-tight text-gray-900">
-          We are the <span className="text-green-600">#1</span> Renovation
-          <br /> Agency in Dubai, UAE
-        </h1>
-          <p className="mt-8 text-lg sm:text-xl font-medium text-gray-600 font-['Poppins'] leading-snug max-w-2xl mx-auto">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Pretium diam ante sem phasellus. Lorem ipsum odor amet,
-            consectetuer adipiscing elit.
+    <section className="relative w-full pt-8 ">
+      {/* Background Section */}
+      <div className="relative max-w-screen-3xl mx-4 mt-12 sm:mt-16 lg:mt-28 h-[75vh] rounded-b-[15px] rounded-t-[15px] overflow-hidden">
+      <img
+          src="/images/dubai-luxury-house-header-image.webp"
+          alt="Dubai Background"
+          className="w-[100%] h-full object-cover mx-auto rounded-b-[15px]"
+        />
+        <div className="absolute inset-0 bg-black/40 rounded-b-[15px]"></div>
+
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-8">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight text-white">
+            We are the <span className="text-[#00c851]">#1</span> Renovation
+            <br />
+            Agency in Dubai, UAE
+          </h1>
+          <p className="mt-4 sm:mt-6 text-lg sm:text-xl font-medium text-neutral-200 font-['Poppins'] max-w-3xl">
+            Elevating Dubai homes with expert renovations, smart upgrades, and exceptional design solutions.
           </p>
+          <a
+              href="#proposal"
+              className="mt-8 inline-flex items-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#00c851] hover:text-white transition-all duration-300 group"
+            >
+              <img
+                src="/icons/material-symbols_collections-bookmark-outline.svg"
+                alt="Book Icon"
+                className="w-6 h-6 object-contain filter-greenish transition-all duration-300 group-hover:filter-white"
+              />
+              Request a Proposal
+            </a>
+        </div>
       </div>
-
       {/* Stats Section */}
-      <div className="flex flex-wrap justify-center items-center bg-stone-50 rounded-3xl border py-7 px-6 sm:px-12 lg:px-14 gap-8 sm:gap-14 mb-12">
-        <div className="flex flex-col items-center sm:items-start">
-          <div className="text-4xl sm:text-5xl lg:text-6xl font-bold font-['Inter'] leading-tight">
-            <span className="text-gray-900"><AnimatedNumber value={200} startValue={100} /></span>
-            <span className="text-green-600">+</span>
-          </div>
-          <span className="text-sm sm:text-base font-medium text-gray-600 font-['Inter']">Renovations</span>
-        </div>
-        <div className="flex flex-col items-center sm:items-start">
-          <div className="text-4xl sm:text-5xl lg:text-6xl font-bold font-['Inter'] leading-tight">
-            <span className="text-gray-900"><AnimatedNumber value={100} startValue={50} /></span>
-            <span className="text-green-600">%</span>
-          </div>
-          <span className="text-sm sm:text-base font-medium text-gray-600 font-['Inter']">Satisfaction</span>
-        </div>
-        <div className="flex flex-col items-center sm:items-start">
-          <div className="text-4xl sm:text-5xl lg:text-6xl font-bold font-['Inter'] leading-tight">
-            <span className="text-gray-900"><AnimatedNumber value={120} startValue={60} /></span>
-            <span className="text-green-600">+</span>
-          </div>
-          <span className="text-sm sm:text-base font-medium text-gray-600 font-['Inter']">Projects</span>
-        </div>
-        <div className="flex flex-col items-center sm:items-start">
-          <div className="text-4xl sm:text-5xl lg:text-6xl font-bold font-['Inter'] leading-tight">
-            <span className="text-gray-900"><AnimatedNumber value={85} startValue={40} /></span>
-            <span className="text-green-600">+</span>
-          </div>
-          <span className="text-sm sm:text-base font-medium text-gray-600 font-['Inter']">Specialists</span>
-        </div>
-      </div>
-
-      {/* Call-to-Action Button */}
-      <a
-        href="#proposal"
-        className="h-12 sm:h-14 lg:h-16 pl-4 sm:pl-5 pr-6 sm:pr-7 py-2 sm:py-3.5 bg-[#0D2220] text-white text-lg sm:text-xl font-medium font-['Poppins'] rounded-lg flex justify-center items-center gap-2 transition-all duration-200 hover:bg-[#00c851]"
-      >
-        <div className="w-6 sm:w-7 lg:w-8 h-6 sm:h-7 lg:h-8 px-1 flex justify-center items-center">
-          <img src="/icons/material-symbols_collections-bookmark-outline.svg" alt="Book Icon" className="w-full h-full object-contain filter-white" />
-        </div>
-        Request a Proposal
-      </a>
+      <StatsSection />
     </section>
   );
 };
