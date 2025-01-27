@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full px-6 py-4 bg-[#F2F5F3] flex justify-between items-center z-50 lg:px-24 lg:py-7">
+    <nav className="fixed top-0 left-0 w-full px-6 py-4 bg-[#F2F5F3] flex justify-between items-center z-50 lg:px-24 lg:py-5">
       {/* Logo Section */}
       <motion.div className="w-48 h-12 flex justify-center items-center overflow-hidden lg:w-72 lg:h-16">
         <div className="relative w-48 h-12 lg:w-72 lg:h-16">

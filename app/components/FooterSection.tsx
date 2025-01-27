@@ -1,4 +1,15 @@
+
 const Footer = () => {
+  // Smooth Scroll Function
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const yOffset = -100; // Adjust offset to account for sticky navbar
+      const yPosition = section.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: yPosition, behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="bg-[#0D2220] text-white py-0 pt-8">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col gap-12">
@@ -55,26 +66,21 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <h3 className="text-2xl font-bold">Menu</h3>
             <ul className="space-y-3">
-              <li>
-                <a href="#about" className="flex items-center gap-2 text-white hover:underline">
-                  <span className="text-[#00c851]">&gt;</span> About Us
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="flex items-center gap-2 text-white hover:underline">
-                  <span className="text-[#00c851]">&gt;</span> Services
-                </a>
-              </li>
-              <li>
-                <a href="#projects" className="flex items-center gap-2 text-white hover:underline">
-                  <span className="text-[#00c851]">&gt;</span> Projects
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="flex items-center gap-2 text-white hover:underline">
-                  <span className="text-[#00c851]">&gt;</span> Contact
-                </a>
-              </li>
+              {[
+                { id: "about", label: "About Us" },
+                { id: "services", label: "Services" },
+                { id: "projects", label: "Projects" },
+                { id: "contact", label: "Contact" },
+              ].map((item) => (
+                <li key={item.id}>
+                  <button
+                    onClick={() => scrollToSection(item.id)}
+                    className="flex items-center gap-2 text-white hover:underline"
+                  >
+                    <span className="text-[#00c851]">&gt;</span> {item.label}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
 

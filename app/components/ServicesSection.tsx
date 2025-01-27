@@ -85,8 +85,10 @@ const ServicesSection = () => {
               alt={service.title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
+                        {/* Static Gradient Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+
             {/* Overlay and Text Section */}
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300"></div>
             <div className="absolute bottom-4 left-4 z-10 text-white">
               <h3 className="text-lg sm:text-xl lg:text-3xl font-bold font-['Poppins'] capitalize leading-tight max-w-[85%] sm:max-w-[70%] lg:max-w-[60%] break-words">
                 {service.title}

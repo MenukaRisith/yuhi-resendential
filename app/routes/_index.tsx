@@ -1,20 +1,26 @@
-import { motion } from 'framer-motion';
-import Navbar from '../components/NavBar';
-import HeroSection from '../components/HeroSection';
-import AboutSection from '~/components/AboutSection';
-import ServicesSection from '~/components/ServicesSection';
-import ProjectsSection from '~/components/ProjectSection';
-import ContactSection from '~/components/ContactSection';
-import Footer from '~/components/FooterSection';
+import { useEffect } from "react";
+import { motion } from "framer-motion";
+import Navbar from "../components/NavBar";
+import HeroSection from "../components/HeroSection";
+import AboutSection from "~/components/AboutSection";
+import ServicesSection from "~/components/ServicesSection";
+import ProjectsSection from "~/components/ProjectSection";
+import ContactSection from "~/components/ContactSection";
+import Footer from "~/components/FooterSection";
 
 const HomePage = () => {
+  // Scroll to the top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Animation Variants
   const sectionVariants = {
-    hidden: { opacity: 0, y: 50 }, // Initially hidden with slight vertical offset
+    hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' }, // Smooth transition
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
@@ -23,7 +29,7 @@ const HomePage = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 1, ease: 'easeOut' },
+      transition: { duration: 0.5, ease: "easeOut" },
     },
   };
 
@@ -32,11 +38,7 @@ const HomePage = () => {
       <Navbar />
       <main>
         {/* Animated Hero Section */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={heroVariants}
-        >
+        <motion.div initial="hidden" animate="visible" variants={heroVariants}>
           <HeroSection />
         </motion.div>
 

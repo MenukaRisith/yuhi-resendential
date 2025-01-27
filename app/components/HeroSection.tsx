@@ -45,7 +45,7 @@ const StatsSection = () => {
       {statsData.map((stat, index) => (
         <div
           key={index}
-          className="flex flex-col items-center text-center"
+          className="flex flex-col items-start text-left"
         >
           <div className="text-4xl sm:text-5xl lg:text-6xl font-bold">
             <span>
@@ -67,13 +67,16 @@ const HeroSection = () => {
   return (
     <section className="relative w-full pt-8 ">
       {/* Background Section */}
-      <div className="relative max-w-screen-3xl mx-4 mt-12 sm:mt-16 lg:mt-28 h-[75vh] rounded-b-[15px] rounded-t-[15px] overflow-hidden">
-      <img
+      <div className="relative max-w-screen-3xl mx-4 mt-12 sm:mt-16 lg:mt-20 h-[75vh] rounded-b-[15px] rounded-t-[15px] overflow-hidden">
+        {/* Image Section */}
+        <img
           src="/images/dubai-luxury-house-header-image.webp"
           alt="Dubai Background"
           className="w-[100%] h-full object-cover mx-auto rounded-b-[15px]"
         />
-        <div className="absolute inset-0 bg-black/40 rounded-b-[15px]"></div>
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-b-[15px]"></div>
 
         {/* Content */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-8">
