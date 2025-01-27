@@ -46,7 +46,7 @@ const ContactSection = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="w-full lg:w-[380px] mr-8 h-48 bg-white rounded-2xl p-6 flex flex-col justify-between transition-shadow duration-300 delay-200 hover:shadow-md"
+                className="w-full lg:w-[380px] mr-8 h-48 bg-white rounded-2xl p-6 flex flex-col justify-between transition-shadow duration-300 delay-200"
               >
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-[#0D2220] rounded-2xl flex justify-center items-center">

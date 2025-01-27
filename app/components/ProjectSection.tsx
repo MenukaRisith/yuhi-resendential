@@ -16,7 +16,7 @@ const ProjectsSection = () => {
         {Array.from({ length: 12 }).map((_, index) => (
           <div
             key={index}
-            className="w-full h-48 sm:h-60 lg:h-72 rounded-2xl overflow-hidden flex justify-center items-center bg-gray-200 transition-shadow duration-300 delay-200 hover:shadow-md group"
+            className="w-full h-48 sm:h-60 lg:h-72 rounded-2xl overflow-hidden flex justify-center items-center bg-gray-200 transition-shadow duration-300 delay-200 group"
           >
             <img
               src="/images/bg-1.png"
