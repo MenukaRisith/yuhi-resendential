@@ -65,7 +65,7 @@ const ContactSection = () => {
                     </p>
                   </div>
                 </div>
-                <button className="w-full px-5 py-3.5 bg-neutral-200 rounded-lg text-base sm:text-xl font-medium font-['Poppins'] text-gray-900 transition-all duration-200 hover:bg-[#00c851]">
+                <button className="w-full px-5 py-3.5 bg-neutral-200 rounded-lg text-base sm:text-xl font-medium font-['Poppins'] text-gray-900 transition-all duration-200 hover:bg-[#00380C] hover:text-white">
                   {item.button}
                 </button>
               </div>

@@ -63,7 +63,7 @@ const Navbar = () => {
       {/* WhatsApp Contact Button */}
       <motion.a
         whileHover={{
-          backgroundColor: "#00c851",
+          backgroundColor: "#00380C",
           transition: { duration: 0.2 },
         }}
         href="https://wa.me/971565715159"

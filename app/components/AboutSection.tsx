@@ -20,7 +20,7 @@ const AboutSection = () => {
             href="https://wa.me/971565715159"
             target="_blank"
             rel="noopener noreferrer"
-            className="h-12 sm:h-14 pl-4 sm:pl-5 pr-6 sm:pr-7 py-2 sm:py-3.5 bg-[#0D2220] rounded-3xl flex justify-center items-center gap-2 transition-all duration-200 hover:bg-[#00c851]"
+            className="h-12 sm:h-14 pl-4 sm:pl-5 pr-6 sm:pr-7 py-2 sm:py-3.5 bg-[#0D2220] rounded-3xl flex justify-center items-center gap-2 transition-all duration-200 hover:bg-[#00380C]"
           >
             <div className="w-6 sm:w-7 h-6 sm:h-7 flex justify-center items-center">
               <img src="/icons/ic_round-whatsapp.svg" alt="WhatsApp Icon" className="w-full h-full object-contain filter-white" />

@@ -90,7 +90,7 @@ const HeroSection = () => {
           </p>
           <a
               href="#proposal"
-              className="mt-8 inline-flex items-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#00c851] hover:text-white transition-all duration-300 group"
+              className="mt-8 inline-flex items-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#00380C] hover:text-white transition-all duration-300 group"
             >
               <img
                 src="/icons/material-symbols_collections-bookmark-outline.svg"
