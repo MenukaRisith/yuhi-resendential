@@ -41,7 +41,7 @@ const StatsSection = () => {
   ];
 
   return (
-    <div className="relative mt-16 sm:-mt-16 bg-white text-gray-900 rounded-3xl border border-stone-300 py-6 px-6 sm:px-12 lg:px-14 grid grid-cols-2 sm:flex sm:flex-wrap justify-center items-center gap-8 sm:gap-14 w-11/12 sm:w-3/4 lg:w-1/2 mx-auto">
+    <div className="relative mt- mb-16 mt-16 sm:-mt-16 bg-white text-gray-900 rounded-3xl border border-stone-300 py-6 px-6 sm:px-12 lg:px-14 grid grid-cols-2 sm:flex sm:flex-wrap justify-center items-center gap-8 sm:gap-14 w-11/12 sm:w-3/4 lg:w-1/2 mx-auto">
       {statsData.map((stat, index) => (
         <div
           key={index}
@@ -88,17 +88,30 @@ const HeroSection = () => {
           <p className="mt-4 sm:mt-6 text-lg sm:text-xl font-medium text-neutral-200 font-['Poppins'] max-w-3xl">
             Elevating Dubai homes with expert renovations, smart upgrades, and exceptional design solutions.
           </p>
-          <a
-              href="#proposal"
-              className="mt-8 inline-flex items-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#00380C] hover:text-white transition-all duration-300 group"
-            >
-              <img
-                src="/icons/material-symbols_collections-bookmark-outline.svg"
-                alt="Book Icon"
-                className="w-6 h-6 object-contain filter-greenish transition-all duration-300 group-hover:filter-white"
-              />
-              Request a Proposal
-            </a>
+          <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
+              <a
+                href="#proposal"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#00380C] hover:text-white transition-all duration-300 group"
+              >
+                <img
+                  src="/icons/ic_round-whatsapp.svg"
+                  alt="WhatsApp Icon"
+                  className="w-6 h-6 object-contain filter-greenish transition-all duration-300 group-hover:filter-white"
+                />
+                Contact us
+              </a>
+              <a
+                href="#proposal"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#00380C] hover:text-white transition-all duration-300 group"
+              >
+                <img
+                  src="/icons/material-symbols_collections-bookmark-outline.svg"
+                  alt="Book Icon"
+                  className="w-6 h-6 object-contain filter-greenish transition-all duration-300 group-hover:filter-white"
+                />
+                Request a Proposal
+              </a>
+            </div>
         </div>
       </div>
       {/* Stats Section */}

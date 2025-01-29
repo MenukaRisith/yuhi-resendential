@@ -6,10 +6,10 @@ const ContactSection = () => {
         <div className="flex flex-col items-start w-full lg:w-[55%]">
           {/* Section Title */}
           <div className="mb-12 w-full max-w-3xl text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight text-gray-900">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-gray-900">
               It’s easier than ever <span className="whitespace-nowrap">to <span className="text-[#00c851]">contact us</span></span>
             </h2>
-            <p className="mt-4 text-base sm:text-lg lg:text-xl font-normal font-['Poppins'] text-zinc-600 leading-normal">
+            <p className="mt-4 text-base sm:text-lg lg:text-xl font-regular font-['Poppins'] text-zinc-600 leading-normal">
               Lorem ipsum odor amet, consectetuer adipiscing elit.
               <br />
               Aaugue tincidunt libero cras primis sodales nisl.
@@ -23,24 +23,28 @@ const ContactSection = () => {
                 title: "Call",
                 detail: "+971 56 184 2080",
                 button: "Call now",
+                link: "tel:+971561842080",
                 icon: "/icons/material-symbols_phone-in-talk-outline-rounded.svg",
               },
               {
                 title: "Message",
                 detail: "+971 56 184 2080",
                 button: "Message now",
+                link: "sms:+971561842080",
                 icon: "/icons/material-symbols_perm-phone-msg-outline-rounded.svg",
               },
               {
                 title: "Mail",
                 detail: "yuhi******@gmail.com",
                 button: "Email now",
+                link: "mailto:yuhisweetfamily@gmail.com",
                 icon: "/icons/material-symbols_mark-email-unread-outline.svg",
               },
               {
-                title: "Whatsapp",
+                title: "WhatsApp",
                 detail: "+971 56 184 2080",
                 button: "Call/Message now",
+                link: "https://wa.me/971561842080",
                 icon: "/icons/ic_round-whatsapp.svg",
               },
             ].map((item, index) => (
@@ -65,9 +69,14 @@ const ContactSection = () => {
                     </p>
                   </div>
                 </div>
-                <button className="w-full px-5 py-3.5 bg-neutral-200 rounded-lg text-base sm:text-xl font-medium font-['Poppins'] text-gray-900 transition-all duration-200 hover:bg-[#00380C] hover:text-white">
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full px-5 py-3.5 bg-neutral-200 rounded-lg text-base sm:text-xl font-medium font-['Poppins'] text-gray-900 transition-all duration-200 hover:bg-[#00380C] hover:text-white text-center"
+                >
                   {item.button}
-                </button>
+                </a>
               </div>
             ))}
           </div>
