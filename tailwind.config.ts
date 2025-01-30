@@ -4,6 +4,9 @@ export default {
   content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        'custom-lg': '1400px', // Define a custom breakpoint
+      },
       fontFamily: {
         sans: [
           "Inter",

@@ -12,10 +12,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full px-6 py-4 bg-[#F2F5F3] flex justify-between items-center z-50 lg:px-24 lg:py-5">
+    <nav className="fixed top-0 left-0 w-full px-6 py-4 bg-[#F2F5F3] flex justify-between items-center z-50 custom-lg:px-24 custom-lg:py-5">
       {/* Logo Section */}
-      <motion.div className="w-48 h-12 flex justify-center items-center overflow-hidden lg:w-72 lg:h-16">
-        <div className="relative w-48 h-12 lg:w-72 lg:h-16">
+      <motion.div className="w-48 h-12 flex justify-center items-center overflow-hidden custom-lg:w-72 custom-lg:h-16">
+        <div className="relative w-48 h-12 custom-lg:w-72 custom-lg:h-16">
           <img
             src="/logo.png"
             alt="Yuhi-Residential-Property-Care-Logo"
@@ -24,8 +24,8 @@ const Navbar = () => {
         </div>
       </motion.div>
 
-      {/* Hamburger Menu for Mobile */}
-      <div className="lg:hidden flex items-center">
+      {/* Hamburger Menu for 1300px or Less */}
+      <div className="custom-lg:hidden flex items-center">
         <button
           className="text-gray-900 text-3xl"
           onClick={() => {
@@ -40,9 +40,9 @@ const Navbar = () => {
       {/* Navigation Links */}
       <div
         id="mobile-menu"
-        className="hidden absolute top-20 left-0 w-full bg-[#F2F5F3] lg:static lg:flex lg:items-center lg:gap-10 lg:w-auto"
+        className="hidden absolute top-20 left-0 w-full bg-[#F2F5F3] custom-lg:static custom-lg:flex custom-lg:items-center custom-lg:gap-10 custom-lg:w-auto"
       >
-        <div className="flex flex-col gap-6 py-6 px-8 lg:flex-row lg:p-0 lg:gap-10">
+        <div className="flex flex-col gap-6 py-6 px-8 custom-lg:flex-row custom-lg:p-0 custom-lg:gap-10">
           {[
             { id: "about", label: "About Us" },
             { id: "services", label: "Services" },
@@ -52,7 +52,7 @@ const Navbar = () => {
             <motion.a
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className="cursor-pointer text-stone-950 text-lg font-semibold capitalize leading-7 transition-all duration-200 hover:text-[#00c851] lg:text-2xl"
+              className="cursor-pointer text-stone-950 text-lg font-semibold capitalize leading-7 transition-all duration-200 hover:text-[#00c851] custom-lg:text-2xl"
             >
               {link.label}
             </motion.a>
@@ -69,7 +69,7 @@ const Navbar = () => {
         href="https://wa.me/971565715159"
         target="_blank"
         rel="noopener noreferrer"
-        className="hidden lg:flex h-14 pl-5 pr-7 py-3 bg-[#0D2220] rounded-full justify-center items-center gap-3 transition-all duration-200"
+        className="hidden custom-lg:flex h-14 pl-5 pr-7 py-3 bg-[#0D2220] rounded-full justify-center items-center gap-3 transition-all duration-200"
       >
         <motion.div
           whileHover={{

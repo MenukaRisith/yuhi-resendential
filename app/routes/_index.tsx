@@ -24,21 +24,16 @@ const HomePage = () => {
     },
   };
 
-  const heroVariants = {
-    hidden: { opacity: 0, scale: 0.95 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 0.5, ease: "easeOut" },
-    },
-  };
-
   return (
     <div className="min-h-screen bg-[#F2F5F3] font-[poppins]">
       <Navbar />
       <main>
         {/* Animated Hero Section */}
-        <motion.div initial="hidden" animate="visible" variants={heroVariants}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={sectionVariants} // Apply the same sectionVariants here
+        >
           <HeroSection />
         </motion.div>
 

@@ -31,7 +31,6 @@ AnimatedNumber.propTypes = {
   startValue: PropTypes.number.isRequired,
 };
 
-// StatsSection Component
 const StatsSection = () => {
   const statsData = [
     { label: "Renovations", value: 200, startValue: 100, suffix: "+" },
@@ -41,12 +40,9 @@ const StatsSection = () => {
   ];
 
   return (
-    <div className="relative mt- mb-16 mt-16 sm:-mt-16 bg-white text-gray-900 rounded-3xl border border-stone-300 py-6 px-6 sm:px-12 lg:px-14 grid grid-cols-2 sm:flex sm:flex-wrap justify-center items-center gap-8 sm:gap-14 w-11/12 sm:w-3/4 lg:w-1/2 mx-auto">
+    <div className="relative mb-16 mt-16 sm:-mt-16 bg-white text-gray-900 rounded-3xl border border-stone-300 py-6 pl-16 sm:pl-20 px-6 sm:px-12 lg:px-14 grid grid-cols-2 sm:grid-cols-2 custom-lg:grid-cols-2 custom-lg:grid-rows-2 xl:flex xl:flex-wrap justify-center items-center gap-8 sm:gap-14 w-11/12 sm:w-[30rem] lg:w-1/2 mx-auto">
       {statsData.map((stat, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-start text-left"
-        >
+        <div key={index} className="flex flex-col items-start text-left">
           <div className="text-4xl sm:text-5xl lg:text-6xl font-bold">
             <span>
               <AnimatedNumber value={stat.value} startValue={stat.startValue} />
@@ -61,6 +57,7 @@ const StatsSection = () => {
     </div>
   );
 };
+
 
 // HeroSection Component
 const HeroSection = () => {
@@ -91,7 +88,7 @@ const HeroSection = () => {
           <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
               <a
                 href="#proposal"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#00380C] hover:text-white transition-all duration-300 group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#0D2220] hover:text-white transition-all duration-300 group"
               >
                 <img
                   src="/icons/ic_round-whatsapp.svg"
@@ -102,7 +99,7 @@ const HeroSection = () => {
               </a>
               <a
                 href="#proposal"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#00380C] hover:text-white transition-all duration-300 group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#0D2220] hover:text-white transition-all duration-300 group"
               >
                 <img
                   src="/icons/material-symbols_collections-bookmark-outline.svg"

@@ -73,7 +73,7 @@ const ContactSection = () => {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full px-5 py-3.5 bg-neutral-200 rounded-lg text-base sm:text-xl font-medium font-['Poppins'] text-gray-900 transition-all duration-200 hover:bg-[#00380C] hover:text-white text-center"
+                  className="w-full px-5 py-3.5 bg-neutral-200 rounded-lg text-base sm:text-xl font-medium font-['Poppins'] text-gray-900 transition-all duration-200 hover:bg-[#0D2220] hover:text-white text-center"
                 >
                   {item.button}
                 </a>
