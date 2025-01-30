@@ -7,7 +7,7 @@ const ContactSection = () => {
           {/* Section Title */}
           <div className="mb-12 w-full max-w-3xl text-center lg:text-left">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-gray-900">
-              It’s easier than ever <span className="whitespace-nowrap">to <span className="text-[#00c851]">contact us</span></span>
+              It’s easier than ever <span className="whitespace-nowrap">to <span className="text-[#00c851]">contact us</span> 👋</span>
             </h2>
             <p className="mt-4 text-base sm:text-lg lg:text-xl font-regular font-['Poppins'] text-zinc-600 leading-normal">
               Lorem ipsum odor amet, consectetuer adipiscing elit.
