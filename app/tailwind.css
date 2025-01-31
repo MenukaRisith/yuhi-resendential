@@ -9,6 +9,9 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .filter-white {
