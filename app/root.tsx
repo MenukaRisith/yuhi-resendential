@@ -6,7 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
-import { SpeedInsights } from "@vercel/speed-insights/react";
+import { SpeedInsights } from "@vercel/speed-insights/remix";
 
 import "./tailwind.css";
 
