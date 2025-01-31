@@ -10,6 +10,7 @@ import type { LinksFunction, MetaFunction } from "@remix-run/node";
       {/* Vercel Configs */}
 
 import { SpeedInsights } from "@vercel/speed-insights/remix";
+import { Analytics } from "@vercel/analytics/remix"
 
 import "./tailwind.css";
 
@@ -57,6 +58,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <SpeedInsights />
+        <Analytics />
         <ScrollRestoration />
         <Scripts />
       </body>
