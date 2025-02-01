@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const ProjectsSection = () => {
   return (
     <section className="w-full py-12 sm:py-16 flex flex-col items-center bg-[#0D2220]" id="projects">
@@ -18,10 +20,12 @@ const ProjectsSection = () => {
             key={index}
             className="w-full h-48 sm:h-60 lg:h-72 rounded-2xl overflow-hidden flex justify-center items-center bg-gray-200 transition-shadow duration-300 delay-200 group"
           >
-            <img
+            <motion.img
               src="/images/bg-1.png"
               alt={`Project ${index + 1}`}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              whileHover={{ scale: 1.10 }}
+              transition={{ duration: 0.5 }}
             />
           </div>
         ))}
