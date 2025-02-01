@@ -82,8 +82,8 @@ const HeroSection = () => {
           className="w-[100%] h-full object-cover mx-auto rounded-b-[15px]"
         />
 
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent rounded-b-[15px]"></div>
+        {/* Solid Color Overlay */}
+        <div className="absolute inset-0 bg-black/70 rounded-b-[15px]"></div>
 
         {/* Content */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-8 mt-6 mb-6 sm:mt-0 sm:mb-0">
