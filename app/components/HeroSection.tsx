@@ -58,13 +58,12 @@ const StatsSection = () => {
   );
 };
 
-
 // HeroSection Component
 const HeroSection = () => {
   return (
     <section className="relative w-full pt-8 ">
       {/* Background Section */}
-      <div className="relative max-w-screen-3xl mx-4 mt-12 sm:mt-16 lg:mt-20 h-[75vh] rounded-b-[15px] rounded-t-[15px] overflow-hidden">
+      <div className="relative max-w-screen-3xl mx-4 mt-12 sm:mt-16 lg:mt-20 h-[90vh] sm:h-[75vh] rounded-b-[15px] rounded-t-[15px] overflow-hidden">
         {/* Image Section */}
         <img
           src="/images/dubai-luxury-house-header-image.webp"
@@ -76,7 +75,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent rounded-b-[15px]"></div>
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-8">
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-8 mt-6 mb-6 sm:mt-0 sm:mb-0">
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight text-white">
             We are the <span className="text-[#00c851]">#1</span> Renovation
             <br />
@@ -86,29 +85,29 @@ const HeroSection = () => {
             Elevating Dubai homes with expert renovations, smart upgrades, and exceptional design solutions.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
-              <a
-                href="#proposal"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#0D2220] hover:text-white transition-all duration-300 group"
-              >
-                <img
-                  src="/icons/ic_round-whatsapp.svg"
-                  alt="WhatsApp Icon"
-                  className="w-6 h-6 object-contain filter-greenish transition-all duration-300 group-hover:filter-white"
-                />
-                Contact us
-              </a>
-              <a
-                href="#proposal"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 bg-white text-gray-900 text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#0D2220] hover:text-white transition-all duration-300 group"
-              >
-                <img
-                  src="/icons/material-symbols_collections-bookmark-outline.svg"
-                  alt="Book Icon"
-                  className="w-6 h-6 object-contain filter-greenish transition-all duration-300 group-hover:filter-white"
-                />
-                Request a Proposal
-              </a>
-            </div>
+            <a
+              href="#proposal"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-4 py-2 sm:px-6 sm:py-3 bg-white text-gray-900 text-base sm:text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#0D2220] hover:text-white transition-all duration-300 group"
+            >
+              <img
+                src="/icons/ic_round-whatsapp.svg"
+                alt="WhatsApp Icon"
+                className="w-6 h-6 object-contain filter-greenish transition-all duration-300 group-hover:filter-white"
+              />
+              Contact us
+            </a>
+            <a
+              href="#proposal"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-4 py-2 sm:px-6 sm:py-3 bg-white text-gray-900 text-base sm:text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#0D2220] hover:text-white transition-all duration-300 group"
+            >
+              <img
+                src="/icons/material-symbols_collections-bookmark-outline.svg"
+                alt="Book Icon"
+                className="w-6 h-6 object-contain filter-greenish transition-all duration-300 group-hover:filter-white"
+              />
+              Request a Proposal
+            </a>
+          </div>
         </div>
       </div>
       {/* Stats Section */}
