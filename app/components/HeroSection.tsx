@@ -40,7 +40,17 @@ const StatsSection = () => {
   ];
 
   return (
-    <div className="relative mb-16 mt-16 sm:-mt-16 bg-white text-gray-900 rounded-3xl border border-stone-300 py-6 pl-16 sm:pl-20 px-6 sm:px-12 lg:px-14 grid grid-cols-2 sm:grid-cols-2 custom-lg:grid-cols-2 custom-lg:grid-rows-2 xl:flex xl:flex-wrap justify-center items-center gap-8 sm:gap-14 w-11/12 sm:w-[30rem] lg:w-1/2 mx-auto">
+    <div
+      className="relative mb-16 mt-16 sm:-mt-16 bg-white text-gray-900 rounded-3xl border border-stone-300 py-6 
+                 pl-16 pr-16 
+                 sm:pl-20 sm:pr-20 
+                 custom-lg:pl-20 custom-lg:pr-20
+                 lg:px-14 
+                 grid grid-cols-2 sm:grid-cols-2 custom-lg:grid-cols-2 custom-lg:grid-rows-2 xl:flex xl:flex-wrap 
+                 justify-center items-center 
+                 gap-8 sm:gap-14 
+                 w-11/12 sm:w-[30rem] lg:w-1/2 mx-auto"
+    >
       {statsData.map((stat, index) => (
         <div key={index} className="flex flex-col items-start text-left">
           <div className="text-4xl sm:text-5xl lg:text-6xl font-bold">
@@ -49,7 +59,7 @@ const StatsSection = () => {
             </span>
             <span className="text-[#00c851]">{stat.suffix}</span>
           </div>
-          <span className="text-sm sm:text-base font-medium text-zinc-600 font-['Poppins']">
+          <span className="text-sm sm:text-base font-medium text-zinc-600 font-['Poppins'] custom-lg:mt-2">
             {stat.label}
           </span>
         </div>
@@ -57,6 +67,7 @@ const StatsSection = () => {
     </div>
   );
 };
+
 
 // HeroSection Component
 const HeroSection = () => {
