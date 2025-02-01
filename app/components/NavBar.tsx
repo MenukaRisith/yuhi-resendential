@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
       </motion.div>
 
-      {/* Hamburger Menu for Mobile */}
+      {/* Hamburger Menu Button for Mobile */}
       <div className="custom-lg:hidden flex items-center">
         <button
           className="text-gray-900 text-3xl"
@@ -51,7 +51,12 @@ const Navbar = () => {
           ].map((link) => (
             <motion.a
               key={link.id}
-              onClick={() => scrollToSection(link.id)}
+              onClick={() => {
+                scrollToSection(link.id);
+                // Optionally close the mobile menu after clicking a link
+                const menu = document.getElementById("mobile-menu");
+                menu?.classList.add("hidden");
+              }}
               className="cursor-pointer text-stone-950 text-lg font-semibold capitalize leading-7 transition-all duration-200 hover:text-[#00c851] custom-lg:text-2xl"
             >
               {link.label}
@@ -67,7 +72,7 @@ const Navbar = () => {
             href="https://wa.me/971565715159"
             target="_blank"
             rel="noopener noreferrer"
-            className="custom-lg:hidden flex h-14 pl-5 pr-7 py-3 bg-[#0D2220] rounded-full justify-center items-center gap-3 transition-all duration-200"
+            className="flex custom-lg:hidden h-14 pl-5 pr-7 py-3 bg-[#0D2220] rounded-full justify-center items-center gap-3 transition-all duration-200"
           >
             <motion.div
               whileHover={{
@@ -81,7 +86,7 @@ const Navbar = () => {
                 className="w-full h-full object-contain filter-white"
               />
             </motion.div>
-            <span className="text-white text-lg font-medium font-['Poppins'] transition-all duration-200">
+            <span className="text-white text-lg font-medium font-['Poppins'] whitespace-nowrap transition-all duration-200">
               +971 56 571 5159
             </span>
             <div className="px-3 py-1 bg-white rounded-full flex justify-center items-center gap-1.5 transition-all duration-300">
@@ -117,7 +122,7 @@ const Navbar = () => {
             className="w-full h-full object-contain filter-white"
           />
         </motion.div>
-        <span className="text-white text-lg font-medium font-['Poppins'] transition-all duration-200">
+        <span className="text-white text-lg font-medium font-['Poppins'] whitespace-nowrap transition-all duration-200">
           +971 56 571 5159
         </span>
         <div className="px-3 py-1 bg-white rounded-full flex justify-center items-center gap-1.5 transition-all duration-300">
