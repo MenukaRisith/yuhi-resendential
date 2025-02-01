@@ -53,13 +53,13 @@ const StatsSection = () => {
     >
       {statsData.map((stat, index) => (
         <div key={index} className="flex flex-col items-start text-left">
-          <div className="text-4xl sm:text-5xl lg:text-6xl font-bold">
+          <div className="text-4xl sm:text-5xl lg:text-6xl max-[400px]:text-3xl font-bold">
             <span>
               <AnimatedNumber value={stat.value} startValue={stat.startValue} />
             </span>
             <span className="text-[#00c851]">{stat.suffix}</span>
           </div>
-          <span className="text-sm sm:text-base font-medium text-zinc-600 font-['Poppins'] custom-lg:mt-2">
+          <span className="text-sm sm:text-base max-[400px]:text-xs font-medium text-zinc-600 font-['Poppins'] custom-lg:mt-2">
             {stat.label}
           </span>
         </div>

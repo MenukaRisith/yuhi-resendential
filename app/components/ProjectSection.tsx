@@ -24,7 +24,7 @@ const ProjectsSection = () => {
               src="/images/bg-1.png"
               alt={`Project ${index + 1}`}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              whileHover={{ scale: 1.10 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5 }}
             />
           </div>
