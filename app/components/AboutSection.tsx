@@ -14,11 +14,7 @@ const AboutSection = () => {
   {/* Wider Paragraph */}
   <div className="w-full max-w-8xl px-6 sm:px-12 md:px-16 lg:px-20">
     <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-normal font-['Poppins'] text-[#DDDDD] leading-relaxed text-center">
-      Yuhi Residential Property Care is Dubai’s premier luxury renovation agency, transforming high-end homes and 
-      commercial spaces with unmatched quality and elegance. Our expert team blends sophisticated design, premium 
-      materials, and meticulous craftsmanship to create bespoke, timeless interiors. From modern upgrades to 
-      full-scale transformations, we deliver seamless, high-end renovations that elevate lifestyles. Experience 
-      refined living with Yuhi.
+    Yuhi Property elevates luxury living in Dubai with bespoke renovations crafted for elegance and quality. From modern upgrades to full transformations, we deliver timeless designs with expert craftsmanship and premium materials.
     </p>
   </div>
 </section>
