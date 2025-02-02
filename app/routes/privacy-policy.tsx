@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
         </button>
 
         {/* Privacy Policy Content */}
-        <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-6 font-['Inter']">
+        <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-6 font-['Poppins']">
           Privacy Policy
         </h1>
         <p className="text-lg lg:text-xl text-zinc-600 mb-4 font-['Poppins']">
@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
         <div className="space-y-8">
           {/* Section 1 */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               1. Information We Collect
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">
@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
 
           {/* Section 2 */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               2. How We Use Your Information
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">
@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
 
           {/* Section 3 */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               3. Sharing Your Information
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">
@@ -69,7 +69,7 @@ const PrivacyPolicy = () => {
 
           {/* Section 4 */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               4. Security of Your Information
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">
@@ -79,7 +79,7 @@ const PrivacyPolicy = () => {
 
           {/* Section 5 */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               5. Changes to This Privacy Policy
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">
@@ -89,7 +89,7 @@ const PrivacyPolicy = () => {
 
           {/* Contact Section */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               Contact Us
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">

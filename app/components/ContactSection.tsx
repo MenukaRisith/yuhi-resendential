@@ -10,9 +10,7 @@ const ContactSection = () => {
               It’s easier than ever <span className="whitespace-nowrap">to <span className="text-[#00c851]">contact us</span> 👋</span>
             </h2>
             <p className="mt-4 text-base sm:text-lg lg:text-xl font-regular font-['Poppins'] text-zinc-600 leading-normal">
-              Lorem ipsum odor amet, consectetuer adipiscing eli.
-              <br />
-              Aaugue tincidunt libero cras primis sodales nisl.
+            Reach out to us for expert guidance, project inquiries,<br />or to start your luxury transformation journey today.
             </p>
           </div>
 

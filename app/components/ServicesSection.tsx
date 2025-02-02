@@ -6,10 +6,10 @@ const ServicesSection = () => {
       {/* Section Title */}
       <div className="text-center mb-10 sm:mb-12 px-4">
         <h2 className="text-4xl sm:text-5xl custom-lg:text-6xl font-semibold leading-tight text-gray-900">
-          Here&apos;s What We <span className="text-[#00c851]">Offer</span> 🤔
+          Here&apos;s what <span className="text-[#00c851]">we offer</span> 🤔
         </h2>
         <p className="mt-4 text-lg sm:text-2xl font-regular font-['Poppins'] text-zinc-600 leading-normal max-w-4xl mx-auto">
-          Explore our expert renovation services, from design to execution, tailored to your home’s needs.
+          Explore our expert renovation services, <br />from design to execution, tailored to your home’s needs.
         </p>
       </div>
 

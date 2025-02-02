@@ -16,11 +16,12 @@ const Navbar = () => {
       {/* Logo Section */}
       <motion.div className="w-48 h-12 flex justify-center items-center overflow-hidden custom-lg:w-72 custom-lg:h-16">
         <div className="relative w-48 h-12 custom-lg:w-72 custom-lg:h-16">
-          <img
+          <a href="#hero">
+            <img
             src="/logo.png"
             alt="Yuhi-Residential-Property-Care-Logo"
             className="w-full h-full object-contain"
-          />
+          /></a>
         </div>
       </motion.div>
 
@@ -57,7 +58,7 @@ const Navbar = () => {
                 const menu = document.getElementById("mobile-menu");
                 menu?.classList.add("hidden");
               }}
-              className="cursor-pointer text-stone-950 text-lg font-semibold capitalize leading-7 transition-all duration-200 hover:text-[#00c851] custom-lg:text-2xl"
+              className="cursor-pointer text-stone-950 text-lg font-regular capitalize leading-7 transition-all duration-200 hover:text-[#00c851] custom-lg:text-2xl"
             >
               {link.label}
             </motion.a>
@@ -123,7 +124,7 @@ const Navbar = () => {
           />
         </motion.div>
         <span className="text-white text-lg font-medium font-['Poppins'] whitespace-nowrap transition-all duration-200">
-          +971 56 571 5159
+        +971 56 184 2080
         </span>
         <div className="px-3 py-1 bg-white rounded-full flex justify-center items-center gap-1.5 transition-all duration-300">
           <div className="w-1.5 h-1.5 bg-green-600 rounded-full"></div>

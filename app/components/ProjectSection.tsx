@@ -9,11 +9,10 @@ const ProjectsSection = () => {
       {/* Section Title */}
       <div className="text-center mb-10 sm:mb-12 px-4">
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-white">
-          Our Completed <span className="text-[#00c851]">Work</span> 👷
+          Our completed <span className="text-[#00c851]">work</span> 👷
         </h2>
         <p className="mt-4 text-lg sm:text-2xl font-regular font-['Poppins'] text-[#DDDDDD] leading-normal max-w-4xl mx-auto">
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Aaugue tincidunt
-          libero cras primis sodales nisl.
+        Discover our portfolio of completed projects,<br />showcasing our craftsmanship and design expertise in every space.
         </p>
       </div>
 

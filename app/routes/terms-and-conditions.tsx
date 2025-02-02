@@ -29,7 +29,7 @@ const TermsAndConditions = () => {
         </button>
 
         {/* Terms and Conditions Content */}
-        <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-6 font-['Inter']">
+        <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-6 font-['Poppins']">
           Terms & Conditions
         </h1>
         <p className="text-lg lg:text-xl text-zinc-600 mb-4 font-['Poppins']">
@@ -39,7 +39,7 @@ const TermsAndConditions = () => {
         <div className="space-y-8">
           {/* Section 1 */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               1. Acceptance of Terms
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">
@@ -49,7 +49,7 @@ const TermsAndConditions = () => {
 
           {/* Section 2 */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               2. Use of Services
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">
@@ -59,7 +59,7 @@ const TermsAndConditions = () => {
 
           {/* Section 3 */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               3. Intellectual Property Rights
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">
@@ -69,7 +69,7 @@ const TermsAndConditions = () => {
 
           {/* Section 4 */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               4. Limitation of Liability
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">
@@ -79,7 +79,7 @@ const TermsAndConditions = () => {
 
           {/* Section 5 */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               5. Modifications to Terms
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">
@@ -89,7 +89,7 @@ const TermsAndConditions = () => {
 
           {/* Contact Section */}
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Inter']">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 font-['Poppins']">
               Contact Us
             </h2>
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">

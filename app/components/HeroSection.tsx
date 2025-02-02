@@ -6,7 +6,7 @@ const AnimatedNumber = ({ value, startValue }: { value: number; startValue: numb
   const [displayValue, setDisplayValue] = useState(startValue);
 
   useEffect(() => {
-    const duration = 500; // Animation duration in ms
+    const duration = 1000; // Animation duration in ms
     const increment = (value - startValue) / (duration / 16);
 
     let currentValue = startValue;
@@ -33,10 +33,10 @@ AnimatedNumber.propTypes = {
 
 const StatsSection = () => {
   const statsData = [
-    { label: "Renovations", value: 200, startValue: 100, suffix: "+" },
-    { label: "Satisfaction", value: 100, startValue: 50, suffix: "%" },
-    { label: "Projects", value: 120, startValue: 60, suffix: "+" },
-    { label: "Specialists", value: 85, startValue: 40, suffix: "+" },
+    { label: "Renovations", value: 200, startValue: 100, suffix: " +" },
+    { label: "Satisfaction", value: 100, startValue: 50, suffix: " %" },
+    { label: "Projects", value: 120, startValue: 60, suffix: " +" },
+    { label: "Specialists", value: 85, startValue: 40, suffix: " +" },
   ];
 
   return (
@@ -49,11 +49,11 @@ const StatsSection = () => {
                  grid grid-cols-2 sm:grid-cols-2 custom-lg:grid-cols-2 custom-lg:grid-rows-2 xl:flex xl:flex-wrap 
                  justify-center items-center 
                  gap-8 sm:gap-14 
-                 w-11/12 sm:w-[30rem] lg:w-1/2 mx-auto"
+                 w-11/12 sm:w-[65%] lg:auto mx-auto"
     >
       {statsData.map((stat, index) => (
         <div key={index} className="flex flex-col items-start text-left">
-          <div className="text-4xl sm:text-5xl lg:text-6xl max-[400px]:text-3xl font-bold">
+          <div className="text-3xl sm:text-4xl lg:text-5xl max-[400px]:text-3xl font-bold">
             <span>
               <AnimatedNumber value={stat.value} startValue={stat.startValue} />
             </span>
@@ -72,7 +72,7 @@ const StatsSection = () => {
 // HeroSection Component
 const HeroSection = () => {
   return (
-    <section className="relative w-full pt-8 ">
+    <section className="relative w-full pt-8 " id="hero">
       {/* Background Section */}
       <div className="relative max-w-screen-3xl mx-4 mt-12 sm:mt-16 lg:mt-20 h-[90vh] sm:h-[75vh] rounded-b-[15px] rounded-t-[15px] overflow-hidden">
         {/* Image Section */}
@@ -87,17 +87,17 @@ const HeroSection = () => {
 
         {/* Content */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-8 mt-6 mb-6 sm:mt-0 sm:mb-0">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight text-white">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight text-white">
             We are the <span className="text-[#00c851]">#1</span> Renovation
             <br />
             Agency in Dubai, UAE
           </h1>
-          <p className="mt-4 sm:mt-6 text-lg sm:text-xl font-medium text-neutral-200 font-['Poppins'] max-w-3xl">
-            Elevating Dubai homes with expert renovations, smart upgrades, and exceptional design solutions.
+          <p className="mt-4 sm:mt-6 lg:text-xl sm:text-[16px] font-medium text-neutral-200 font-['Poppins'] max-w-3xl">
+            Elevating Dubai homes with expert renovations, <br />smart upgrades, and exceptional design solutions.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
             <a
-              href="#proposal"
+              href="https://wa.me/+971561842080"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-4 py-2 sm:px-6 sm:py-3 bg-white text-gray-900 text-base sm:text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#0D2220] hover:text-white transition-all duration-300 group"
             >
               <img
@@ -108,7 +108,7 @@ const HeroSection = () => {
               Contact us
             </a>
             <a
-              href="#proposal"
+              href="https://wa.me/+971561842080"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-4 py-2 sm:px-6 sm:py-3 bg-white text-gray-900 text-base sm:text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#0D2220] hover:text-white transition-all duration-300 group"
             >
               <img
