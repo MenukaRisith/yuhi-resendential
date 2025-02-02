@@ -16,12 +16,19 @@ const Navbar = () => {
       {/* Logo Section */}
       <motion.div className="w-48 h-12 flex justify-center items-center overflow-hidden custom-lg:w-72 custom-lg:h-16">
         <div className="relative w-48 h-12 custom-lg:w-72 custom-lg:h-16">
-          <a href="#hero">
-            <img
+        <a
+          href="#hero"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("hero");
+          }}
+        >
+          <img
             src="/logo.png"
             alt="Yuhi-Residential-Property-Care-Logo"
             className="w-full h-full object-contain"
-          /></a>
+          />
+        </a>
         </div>
       </motion.div>
 
