@@ -24,7 +24,7 @@ const Navbar = () => {
           }}
         >
           <img
-            src="/logo.png"
+            src="/logo.svg"
             alt="Yuhi-Residential-Property-Care-Logo"
             className="w-full h-full object-contain"
           />
@@ -65,7 +65,7 @@ const Navbar = () => {
                 const menu = document.getElementById("mobile-menu");
                 menu?.classList.add("hidden");
               }}
-              className="cursor-pointer text-stone-950 text-lg font-regular capitalize leading-7 transition-all duration-200 hover:text-[#00c851] custom-lg:text-2xl"
+              className="cursor-pointer text-stone-950 text-lg font-medium capitalize leading-7 transition-all duration-200 hover:text-[#00c851] custom-lg:text-2xl"
             >
               {link.label}
             </motion.a>

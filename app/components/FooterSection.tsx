@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Left Section: Logo and Description */}
           <div className="flex flex-col gap-6 max-w-xs">
             <img
-              src="/logo-1.png"
+              src="/logo-1.svg"
               alt="Yuhi Residential Property Care Logo"
               className="object-contain"
             />
