@@ -4,14 +4,14 @@ const ProjectsSection = () => {
   // 1. Create an array of images (with src and alt text).
   //    Make sure these files exist in your public/images folder (for Next.js) or an equivalent folder in a standard React app.
   const projectImages = [
-    { src: "/images/projects/img(1).webp", alt: "Project 1" },
-    { src: "/images/projects/img(2).webp", alt: "Project 2" },
-    { src: "/images/projects/img(3).webp", alt: "Project 3" },
-    { src: "/images/projects/img(4).webp", alt: "Project 4" },
-    { src: "/images/projects/img(5).webp", alt: "Project 5" },
-    { src: "/images/projects/img(6).webp", alt: "Project 6" },
-    { src: "/images/projects/img(7).webp", alt: "Project 7" },
-    { src: "/images/projects/img(8).webp", alt: "Project 8" }
+    { src: "/images/projects/img_1.webp", alt: "Project 1" },
+    { src: "/images/projects/img_2.webp", alt: "Project 2" },
+    { src: "/images/projects/img_3.webp", alt: "Project 3" },
+    { src: "/images/projects/img_4.webp", alt: "Project 4" },
+    { src: "/images/projects/img_5.webp", alt: "Project 5" },
+    { src: "/images/projects/img_6.webp", alt: "Project 6" },
+    { src: "/images/projects/img_7.webp", alt: "Project 7" },
+    { src: "/images/projects/img_8.webp", alt: "Project 8" }
   ];
 
   return (
