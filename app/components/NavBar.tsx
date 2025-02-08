@@ -97,12 +97,12 @@ const Navbar = () => {
             <span className="text-white text-lg font-medium font-['Poppins'] whitespace-nowrap transition-all duration-200">
               +971 56 571 5159
             </span>
-            <div className="px-3 py-1 bg-white rounded-full flex justify-center items-center gap-1.5 transition-all duration-300">
+            {/* <div className="px-3 py-1 bg-white rounded-full flex justify-center items-center gap-1.5 transition-all duration-300">
               <div className="w-1.5 h-1.5 bg-green-600 rounded-full"></div>
               <span className="text-stone-950 text-sm font-medium font-['Poppins']">
                 Online
               </span>
-            </div>
+            </div> */}
           </motion.a>
         </div>
       </div>

@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
-import AboutSection from "~/components/AboutSection";
-import ServicesSection from "~/components/ServicesSection";
-import ProjectsSection from "~/components/ProjectSection";
-import ContactSection from "~/components/ContactSection";
-import Footer from "~/components/FooterSection";
+import AboutSection from "../components/AboutSection";
+import ServicesSection from "../components/ServicesSection";
+import ProjectsSection from "../components/ProjectSection";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/FooterSection";
 
 const HomePage = () => {
   // Scroll to the top on page load
