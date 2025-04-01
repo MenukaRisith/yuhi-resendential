@@ -97,7 +97,7 @@ const HeroSection = () => {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
             <a
-              href="https://wa.me/+971561842080"
+              href="https://wa.me/971521120336"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-4 py-2 sm:px-6 sm:py-3 bg-white text-gray-900 text-base sm:text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#0D2220] hover:text-white transition-all duration-300 group"
             >
               <img
