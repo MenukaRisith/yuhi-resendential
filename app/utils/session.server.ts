@@ -39,7 +39,7 @@ export async function requireAdminId(request: Request): Promise<number> {
 
 export async function logout(request: Request) {
   const session = await sessionStorage.getSession(request.headers.get("Cookie"));
-  return redirect("/login", {
+  return redirect("/auth/login", {
     headers: {
       "Set-Cookie": await sessionStorage.destroySession(session),
     },
