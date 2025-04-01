@@ -113,7 +113,7 @@ const Navbar = () => {
           backgroundColor: "#00380C",
           transition: { duration: 0.2 },
         }}
-        href="https://wa.me/971565715159"
+        href="https://wa.me/971521120336"
         target="_blank"
         rel="noopener noreferrer"
         className="hidden custom-lg:flex h-14 pl-5 pr-7 py-3 bg-[#0D2220] rounded-full justify-center items-center gap-3 transition-all duration-200"
@@ -131,7 +131,7 @@ const Navbar = () => {
           />
         </motion.div>
         <span className="text-white text-lg font-medium font-['Poppins'] whitespace-nowrap transition-all duration-200">
-        +971 56 184 2080
+        +971 52 112 0336
         </span>
         <div className="px-3 py-1 bg-white rounded-full flex justify-center items-center gap-1.5 transition-all duration-300">
           <div className="w-1.5 h-1.5 bg-green-600 rounded-full"></div>

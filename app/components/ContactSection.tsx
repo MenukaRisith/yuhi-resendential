@@ -40,9 +40,9 @@ const ContactSection = () => {
               },
               {
                 title: "WhatsApp",
-                detail: "+971 56 184 2080",
+                detail: "+971 52 112 0336",
                 button: "Call/Message now",
-                link: "https://wa.me/971561842080",
+                link: "https://wa.me/971521120336",
                 icon: "/icons/ic_round-whatsapp.svg",
               },
             ].map((item, index) => (

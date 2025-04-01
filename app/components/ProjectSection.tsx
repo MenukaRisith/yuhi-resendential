@@ -1,18 +1,28 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+type Project = {
+  id: number;
+  filename: string;
+  alt: string;
+};
+
 const ProjectsSection = () => {
-  // 1. Create an array of images (with src and alt text).
-  //    Make sure these files exist in your public/images folder (for Next.js) or an equivalent folder in a standard React app.
-  const projectImages = [
-    { src: "/images/projects/img_1.webp", alt: "Project 1" },
-    { src: "/images/projects/img_2.webp", alt: "Project 2" },
-    { src: "/images/projects/img_3.webp", alt: "Project 3" },
-    { src: "/images/projects/img_4.webp", alt: "Project 4" },
-    { src: "/images/projects/img_5.webp", alt: "Project 5" },
-    { src: "/images/projects/img_6.webp", alt: "Project 6" },
-    { src: "/images/projects/img_7.webp", alt: "Project 7" },
-    { src: "/images/projects/img_8.webp", alt: "Project 8" }
-  ];
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    const loadProjects = async () => {
+      try {
+        const res = await fetch("/api/fetch");
+        const data = await res.json();
+        setProjects(data.projects);
+      } catch (error) {
+        console.error("Failed to fetch projects:", error);
+      }
+    };
+
+    loadProjects();
+  }, []);
 
   return (
     <section
@@ -32,14 +42,14 @@ const ProjectsSection = () => {
 
       {/* Projects Gallery */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 sm:gap-12 px-6 sm:px-8 max-w-7xl">
-        {projectImages.map((image, index) => (
+        {projects.map((project) => (
           <div
-            key={index}
+            key={project.id}
             className="relative w-full sm:w-96 md:w-auto custom-lg:w-[36rem] h-64 sm:h-80 custom-lg:h-84 rounded-2xl overflow-hidden shadow-lg group"
           >
             <motion.img
-              src={image.src}
-              alt={image.alt}
+              src={`/images/projects/${project.filename}`}
+              alt={project.alt}
               className="w-full h-full object-cover"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5 }}
