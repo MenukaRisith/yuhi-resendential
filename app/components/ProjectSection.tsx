@@ -50,6 +50,10 @@ const ProjectsSection = () => {
             <motion.img
               src={`/images/projects/${project.filename}`}
               alt={project.alt}
+              width="640"
+              height="360"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5 }}

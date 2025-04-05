@@ -23,7 +23,11 @@ const AnimatedNumber = ({ value, startValue }: { value: number; startValue: numb
     animate();
   }, [value, startValue]);
 
-  return <span className="inline-block transform transition-transform duration-300 ease-in-out">{displayValue}</span>;
+  return (
+    <span className="inline-block transform transition-transform duration-300 ease-in-out">
+      {displayValue}
+    </span>
+  );
 };
 
 AnimatedNumber.propTypes = {
@@ -68,7 +72,6 @@ const StatsSection = () => {
   );
 };
 
-
 // HeroSection Component
 const HeroSection = () => {
   return (
@@ -79,7 +82,11 @@ const HeroSection = () => {
         <img
           src="/images/dubai-luxury-house-header-image.webp"
           alt="Dubai Background"
-          className="w-[100%] h-full object-cover mx-auto rounded-b-[15px]"
+          width="1920"
+          height="1080"
+          fetchPriority="high"
+          decoding="async"
+          className="w-full h-full object-cover mx-auto rounded-b-[15px]"
         />
 
         {/* Solid Color Overlay */}
@@ -108,7 +115,7 @@ const HeroSection = () => {
               Contact us
             </a>
             <a
-              href="https://wa.me/+971561842080"
+              href="https://wa.me/971521120336"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-4 py-2 sm:px-6 sm:py-3 bg-white text-gray-900 text-base sm:text-lg font-medium font-['Poppins'] rounded-[10px] shadow-lg hover:bg-[#0D2220] hover:text-white transition-all duration-300 group"
             >
               <img
@@ -121,6 +128,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
       {/* Stats Section */}
       <StatsSection />
     </section>

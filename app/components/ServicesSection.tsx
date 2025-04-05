@@ -48,6 +48,10 @@ const ServicesSection = () => {
             <motion.img
               src={`/images/services/${service.image}`}
               alt={service.title}
+              width="640"
+              height="360"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5 }}
