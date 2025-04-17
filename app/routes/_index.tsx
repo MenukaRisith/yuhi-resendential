@@ -1,3 +1,4 @@
+import { MetaFunction } from "@remix-run/node";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/NavBar";
@@ -7,6 +8,17 @@ import ServicesSection from "../components/ServicesSection";
 import ProjectsSection from "../components/ProjectSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/FooterSection";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Yuhi Residential Property Care - Home" },
+    {
+      tagName: "link",
+      rel: "canonical",
+      href: "https://www.yuhipropertyservice.com/",
+    },
+  ];
+};
 
 const HomePage = () => {
   // Scroll to the top on page load

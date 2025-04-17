@@ -1,4 +1,16 @@
+import { MetaFunction } from "@remix-run/node";
 import { useNavigate } from "@remix-run/react";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Terms and Conditions - Yuhi Property Service" },
+    {
+      tagName: "link",
+      rel: "canonical",
+      href: "https://www.yuhipropertyservice.com/terms-and-conditions",
+    },
+  ];
+};
 
 const TermsAndConditions = () => {
   const navigate = useNavigate();
@@ -95,7 +107,7 @@ const TermsAndConditions = () => {
             <p className="text-base lg:text-lg text-zinc-600 font-['Poppins'] leading-relaxed">
               If you have any questions about these Terms and Conditions, please contact us at{' '}
               <a href="mailto:yuhisweetfamily@gmail.com" className="text-[#00c851] underline">
-              yuhisweetfamily@gmail.com
+                yuhisweetfamily@gmail.com
               </a>.
             </p>
           </div>

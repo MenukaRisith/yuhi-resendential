@@ -1,4 +1,17 @@
 import { useNavigate } from "@remix-run/react";
+import { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Privacy Policy - Yuhi Property Service" },
+    {
+      tagName: "link",
+      rel: "canonical",
+      href: "https://www.yuhipropertyservice.com/privacy-policy",
+    },
+  ];
+};
+
 
 const PrivacyPolicy = () => {
   const navigate = useNavigate();
